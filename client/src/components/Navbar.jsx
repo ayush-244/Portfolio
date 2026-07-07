@@ -67,7 +67,7 @@ export const Navbar = () => {
   const lastScrollYRef = useRef(0);
   const audioRef = useRef(null);
 
-  const musicUrl = "/music.mp3";
+  const musicUrl = `${import.meta.env.BASE_URL}music.mp3`;
 
   useEffect(() => {
     if (typeof window !== "undefined") {
