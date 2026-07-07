@@ -118,6 +118,7 @@ export const Navbar = () => {
       const scrollPosition = currentScrollY + 100;
 
       for (const section of sections) {
+        if (section.startsWith("http")) continue;
         const element = document.querySelector(section);
         if (element) {
           const offsetTop = element.offsetTop;
