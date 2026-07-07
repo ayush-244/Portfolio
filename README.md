@@ -1,11 +1,15 @@
 # 💼 Developer Portfolio – React + Vite + Tailwind
-## ⭐ Star this repo if you like it! let's connect and build your project
-
+## ⭐ Star this repo if you like it! Let's connect and build your project
 
 A fast, modern, and responsive developer portfolio website built using **React**, **Vite**, and **Tailwind CSS**. Designed to showcase your projects, skills, and contact information in a clean, professional format. 
 
-## source code portfolio link :https://sahil.devlyhub.in/
-##support and contact for source code
+## 🌐 Live Demo
+[**Click here to view the live demo**](https://github.com/ayush-244/Portfolio.git)
+
+## 🔗 Source Code Repository
+[https://github.com/ayush-244/Portfolio](https://github.com/ayush-244/Portfolio)
+
+## 🤝 Support and Contact for Source Code
 
 ## 🚀 Tech Stack
 
@@ -39,8 +43,8 @@ A fast, modern, and responsive developer portfolio website built using **React**
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/react-vite-portfolio.git
-   cd react-vite-portfolio
+   git clone https://github.com/ayush-244/Portfolio.git
+   cd Portfolio
    ````
 
 2. **Install dependencies**
@@ -77,15 +81,16 @@ You can deploy the site using platforms like:
 
 ## 📬 Contact
 
-Feel free to connect with me through the Contact section on the site or via [LinkedIn](https://linkedin.com/in/codewithkinu) or [Email](mailto:codeithkinu@gmail.com).
+Feel free to connect with me through the Contact section on the site or via [LinkedIn](https://www.linkedin.com/in/ayush-kumar-294b2028a/) or [Email](mailto:ayushku244@gmail.com).
 
 ---
 
-**Made with ❤️ by Sahil  using React, Vite & Tailwind CSS**
+**Made by Ayush Kumar using React, Vite & Tailwind CSS**
 
 
-## 📬 here is privious homepage.. -----
- ```bash
+## 📬 Previous Homepage Code
+
+```javascript
 import { ArrowDown, MousePointerClick, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
@@ -190,7 +195,7 @@ export const HeroSection = () => {
               className="text-primary inline-block ml-3 relative"
               variants={itemVariants}
             >
-              Sahil
+              Ayush
               <motion.span 
                 className="absolute -bottom-2 left-0 h-1 bg-primary w-full"
                 initial={{ scaleX: 0 }}
