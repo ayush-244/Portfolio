@@ -21,7 +21,7 @@ function App() {
       {!welcomeComplete ? (
         <WelcomeScreen onWelcomeComplete={() => setWelcomeComplete(true)} />
       ) : (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route index element={<Home />} />
             <Route path="*" element={<NotFound />} />
