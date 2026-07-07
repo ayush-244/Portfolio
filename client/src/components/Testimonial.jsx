@@ -17,7 +17,7 @@ export const TestimonialSection = () => {
       role: "Product Director at TechCorp",
       content: `Working with Ayush was seamless from day one. Not only did they deliver a full-stack solution ahead of schedule, but they also communicated clearly throughout the project. It's rare to find a developer who understands both the tech and the business side so well`,
       rating: 5,
-      image: "./testimonials/alex-johnson.png"
+      image: `${import.meta.env.BASE_URL}testimonials/alex-johnson.png`
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export const TestimonialSection = () => {
       role: "Senior UX Designer at DesignHub",
       content: `I've reviewed hundreds of portfolios, and his work is truly exceptional. Tway the animations guide attention while maintaining performance is masterful. The gradient elements add depth without overwhelming.`,
       rating: 5,
-      image: "./testimonials/maria-chen.png"
+      image: `${import.meta.env.BASE_URL}testimonials/maria-chen.png`
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export const TestimonialSection = () => {
       role: "CTO at Startup Ventures",
       content: `From wireframes to deployment, Ayush owned the entire stack with confidence and creativity. The final product is fast, reliable, and looks incredible. I wouldn't hesitate to work with them again.`,
       rating: 5,
-      image: "./testimonials/David Wilson.png"
+      image: `${import.meta.env.BASE_URL}testimonials/David Wilson.png`
     },
   ];
 
