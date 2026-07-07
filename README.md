@@ -3,7 +3,7 @@
   <p>A fast, modern, and responsive developer portfolio website built using <strong>React</strong>, <strong>Vite</strong>, and <strong>Tailwind CSS</strong>.</p>
 
   <p>
-    <a href="https://github.com/ayush-244/Portfolio.git"><strong>🌐 Live Demo</strong></a> ·
+    <a href="https://ayush-244.github.io/Portfolio"><strong>🌐 Live Demo</strong></a> ·
     <a href="https://github.com/ayush-244/Portfolio"><strong>🔗 Source Code</strong></a>
   </p>
 
