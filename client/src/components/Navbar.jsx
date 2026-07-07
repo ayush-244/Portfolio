@@ -266,6 +266,16 @@ export const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={(e) => {
+                  if (item.href.startsWith("#")) {
+                    e.preventDefault();
+                    const element = document.querySelector(item.href);
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                      setActiveSection(item.href);
+                    }
+                  }
+                }}
                 className={cn(
                   "p-2 rounded-full transition-colors flex flex-col items-center",
                   activeSection === item.href
@@ -273,6 +283,7 @@ export const Navbar = () => {
                     : "text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary"
                 )}
                 aria-label={item.name}
+                {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
                 <item.icon className="w-5 h-5" />
                 <span className="text-xs mt-1 hidden md:block">{item.name}</span>
