@@ -168,7 +168,7 @@ export const Navbar = () => {
 
         {/* GitHub Button */}
         <motion.a
-          href="https://github.com/sahilmd01" 
+          href="https://github.com/ayush-244" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -187,7 +187,7 @@ export const Navbar = () => {
 
         {/* LinkedIn Button */}
         <motion.a
-          href="https://linkedin.com/in/codewithkinu" 
+          href="https://www.linkedin.com/in/ayush-kumar-294b2028a/" 
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -206,7 +206,7 @@ export const Navbar = () => {
 
         {/* YouTube Button */}
         <motion.a
-          href="https://www.youtube.com/@codewithkinu"
+          href="https://www.youtube.com/@ayush-kumar"
           target="_blank"
           rel="noopener noreferrer"
           className={cn(
@@ -286,3 +286,5 @@ export const Navbar = () => {
     </>
   );
 };
+
+

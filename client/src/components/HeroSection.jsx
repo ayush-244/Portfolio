@@ -9,11 +9,11 @@ export const HeroSection = () => {
   const [displayedCode, setDisplayedCode] = useState("");
 
   const codeSnippets = [
-    "import { FullStackDeveloper } from 'sahil.dev';",
+    "import { SoftwareEngineer } from 'ayush.dev';",
     "",
-    "const developer = new FullStackDeveloper({",
-    "  name: 'Sahil',",
-    "  stack: ['React', 'Next.js', 'Node.js', 'TypeScript'],",
+    "const developer = new SoftwareEngineer({",
+    "  name: 'Ayush Kumar',",
+    "  stack: ['Python', 'React', 'Machine Learning', 'FastAPI'],",
     "  focus: 'Building scalable web applications',",
     "  status: 'Open to new opportunities'",
     "});",
@@ -55,7 +55,7 @@ export const HeroSection = () => {
 
   const handleViewResume = () => {
     // Open resume in new tab
-    window.open('/Sahil-resume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('/Ayush_current.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -104,29 +104,19 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              <span className="block text-foreground">I'm Sahil</span>
+              <span className="block text-foreground">I'm Ayush Kumar</span>
               <motion.span className="block bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2" animate={{ backgroundPosition: ['0%', '100%', '0%'] }} transition={{ duration: 8, repeat: Infinity }} style={{ backgroundSize: '200% 100%' }}>
-                Full-Stack Engineer
+                Software & AI Engineer
               </motion.span>
             </motion.h1>
 
             <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              I build <span className="text-primary font-semibold">high-performance web applications</span> that drive business growth. Specializing in React, Node.js, and scalable architecture for startups and enterprises.
+              I build <span className="text-primary font-semibold">intelligent and scalable systems</span> that drive business growth. Specializing in Machine Learning, full-stack development, and data-driven solutions.
             </motion.p>
 
-            <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              {achievements.map((achievement, index) => (
-                <div key={index} className="text-center p-4 rounded-xl bg-background/60 border border-border/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300">
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    {achievement.icon}
-                    <div className="text-2xl font-bold text-foreground">{achievement.number}</div>
-                  </div>
-                  <div className="text-xs text-muted-foreground">{achievement.label}</div>
-                </div>
-              ))}
-            </motion.div>
 
-            <motion.div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
+
+            <motion.div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               <motion.a href="#projects" className="group relative overflow-hidden px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary to-purple-600 text-primary-foreground shadow-lg hover:shadow-xl text-sm flex items-center justify-center gap-3" whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
                 <Code className="h-5 w-5" /> 
                 <span>View Case Studies</span>
@@ -151,7 +141,7 @@ export const HeroSection = () => {
 
             <motion.div className="mt-6 text-center lg:text-left" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               <div className="text-sm text-muted-foreground">
-                🚀 <span className="text-primary font-semibold">Available Immediately</span> for Full-Stack and Frontend roles
+                🚀 <span className="text-primary font-semibold">Available Immediately</span> for Software Engineering and AI roles
               </div>
             </motion.div>
           </div>
@@ -185,8 +175,8 @@ export const HeroSection = () => {
                             transition-opacity duration-150 ease-in-out
                             ${line.includes("import") ? "text-purple-400 font-semibold" : 
                               line.includes("const") || line.includes("new") ? "text-blue-400 font-semibold" :
-                              line.includes("React") || line.includes("Node.js") || line.includes("TypeScript") ? "text-cyan-400" :
-                              line.includes("FullStackDeveloper") ? "text-emerald-400 font-semibold" :
+                              line.includes("React") || line.includes("Python") || line.includes("Machine Learning") || line.includes("FastAPI") ? "text-cyan-400" :
+                              line.includes("SoftwareEngineer") ? "text-emerald-400 font-semibold" :
                               line.includes("//") ? "text-muted-foreground italic" :
                               line.includes("await") || line.includes("connect") ? "text-yellow-400" :
                               line.includes("'") ? "text-amber-400" : 
@@ -244,3 +234,4 @@ export const HeroSection = () => {
     </section>
   );
 };
+

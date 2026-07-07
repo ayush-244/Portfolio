@@ -4,9 +4,10 @@ import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
+import { CertificationsSection } from "../components/CertificationsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
-import { TestimonialSection } from "../components/Testimonial";
+import { ExperienceSection } from "../components/ExperienceSection";
 
 export const Home = () => {
   return (
@@ -22,8 +23,9 @@ export const Home = () => {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <CertificationsSection />
         <ProjectsSection />
-        <TestimonialSection />
+        <ExperienceSection />
         <ContactSection />
         
       </main>

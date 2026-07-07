@@ -6,7 +6,6 @@ import { useTheme } from "next-themes";
 const WelcomeScreen = ({ onWelcomeComplete }) => {
   const [phase, setPhase] = useState(0);
   const [exitAnimation, setExitAnimation] = useState(false);
-  const [typedText, setTypedText] = useState("");
   const { theme } = useTheme();
 
   // Theme-based colors
@@ -28,7 +27,6 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
   };
 
   const currentColors = colors[theme] || colors.dark;
-  const portfolioUrl = "www.devlyhub.in";
   const welcomeMessages = [
     "Crafting digital experiences",
     "Software Engineer",
@@ -52,21 +50,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
     };
   }, [onWelcomeComplete]);
 
-  useEffect(() => {
-    if (phase >= 2) {
-      let i = 0;
-      const typingInterval = setInterval(() => {
-        if (i <= portfolioUrl.length) {
-          setTypedText(portfolioUrl.substring(0, i));
-          i++;
-        } else {
-          clearInterval(typingInterval);
-        }
-      }, 40);
 
-      return () => clearInterval(typingInterval);
-    }
-  }, [phase]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -210,37 +194,7 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
               </motion.h1>
             )}
 
-            {phase >= 2 && (
-              <motion.div 
-                className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed font-light"
-                style={{ color: currentColors.muted }}
-                variants={contentVariants}
-              >
-                <motion.div 
-                  className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg font-mono flex justify-center items-center"
-                  style={{ color: currentColors.link }}
-                >
-                  {typedText}
-                  {phase >= 2 && (
-                    <motion.span 
-                      className="ml-0.5 h-4 sm:h-5 md:h-6 w-0.5 sm:w-1 inline-block"
-                      style={{ backgroundColor: currentColors.link }}
-                      variants={cursorVariants}
-                      animate="blinking"
-                    />
-                  )}
-                </motion.div>
-                <motion.p 
-                  className="mt-2 sm:mt-4 text-xs sm:text-sm md:text-base"
-                  style={{ color: currentColors.muted }}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1.5 }}
-                >
-                  (This is my portfolio website)
-                </motion.p>
-              </motion.div>
-            )}
+
 
             {phase >= 3 && (
               <motion.div 
@@ -278,3 +232,4 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
 };
 
 export default WelcomeScreen;
+

@@ -4,131 +4,104 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 
 const projects = [
   {
-    id: 8,
-    title: "GenAxis",
-    category: "AI SaaS ",
-    description: "AI saas webapp build with PERN stack and Intigrated Gemini . OPEN SOURCE ",
-    image: "/projects/project8.png",
-    video: "/projects/videos/genaxix-demo.mp4",
-    tags: ["PERN Stack", "Clerk Auth", "Google Gemini", "Clerk Billing", "OPEN SOURCE"],
-    demoUrl: "https://genaxis.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/genaxis",
-    featured: true,
-    accentColor: "from-emerald-500 to-teal-600",
-    status: "Live",
-    highlights: ["Image Generation", "Article writer", "Blog Writter","Resume Reviewer"]
-  },
-  {
-    id: 7,
-    title: "NauraCare",
-    category: "Healthcare SaaS",
-    description: "Hospital management platform with multi-role access, patient tracking, and billing systems.",
-    image: "/projects/project7.png",
-    video: "/projects/videos/nauracare-demo.mp4",
-    tags: ["React", "Node.js", "MongoDB", "Stripe", "JWT Auth"],
-    demoUrl: "https://nauracare.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/neuracare",
-    featured: true,
-    accentColor: "from-emerald-500 to-teal-600",
-    status: "Live",
-    highlights: ["Multi-role system", "Patient management", "Payment integration"]
-  },
-  {
     id: 1,
-    title: "Vante & Co.",
-    category: "E-commerce",
-    description: "Fashion marketplace with product recommendations and seamless checkout experience.",
-    image: "/projects/project1.png",
-    video: "/projects/videos/vante-demo.mp4",
-    tags: ["React", "Node.js", "Stripe", "Redis"],
-    demoUrl: "https://e-commerce-website-4w6a.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/E-commerce-website",
+    title: "MediBridge AI",
+    category: "Healthcare SaaS",
+    description: "A full-stack SaaS platform connecting hospitals, doctors, and patients through intelligent referral orchestration, real-time collaboration, and AI-driven clinical decision support.",
+    image: "/projects/medibridge-ai.png",
+    video: "#",
+    tags: ["React 18", "Node.js", "MongoDB", "FastAPI", "Python", "ChromaDB"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/ayush-244/medibridge-ai",
     featured: true,
-    accentColor: "from-purple-500 to-indigo-600",
-    status: "Live",
-    highlights: ["Product catalog", "Shopping cart", "Payment processing"]
+    accentColor: "from-emerald-500 to-teal-600",
+    status: "Development",
+    highlights: ["RAG-based clinical AI", "Intelligent Hospital Matching", "Socket.IO real-time updates"]
   },
   {
     id: 2,
-    title: "Converse Pro",
-    category: "Real-time Communication",
-    description: "Chat platform with real-time messaging, media sharing, and user authentication.",
-    image: "/projects/project2.png",
-    video: "/projects/videos/converse-demo.mp4",
-    tags: ["Socket.IO", "MongoDB", "React", "WebRTC"],
-    demoUrl: "https://converse-pro-frontend.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/converse-pro",
+    title: "Collaborative Class",
+    category: "EdTech",
+    description: "AI-Driven Classroom Collaboration & Intelligence Platform with real-time collaboration, analytics-driven insights, and peer mentoring.",
+    image: "/projects/collab-class.png",
+    video: "#",
+    tags: ["Node.js", "React", "MongoDB", "Socket.IO", "TypeScript"],
+    demoUrl: "https://collaborative-class-frontend.vercel.app",
+    githubUrl: "https://github.com/ayush-244/Collaborative-Class",
     featured: true,
-    accentColor: "from-blue-500 to-cyan-600",
+    accentColor: "from-purple-500 to-indigo-600",
     status: "Live",
-    highlights: ["Real-time chat", "Media sharing", "User authentication"]
+    highlights: ["Real-time Doubt Discussions", "AI-Powered Peer Suggestions", "Risk Index Calculation"]
   },
   {
     id: 3,
-    title: "Blogni AI",
+    title: "AI Peer Behavior Detector",
     category: "Artificial Intelligence",
-    description: "AI-powered content generation platform with multi-language support.",
-    image: "/projects/project3.png",
-    video: "/projects/videos/blogni-demo.mp4",
-    tags: ["Next.js", "Gemini AI", "Clerk Auth", "Redis"],
-    demoUrl: "https://blogni.vercel.app",
-    githubUrl: "https://github.com/Sahilmd01/Blogni",
+    description: "AI-powered anomaly detection system to detect anomalous behavior patterns in online exams using similarity metrics and graph-based analysis.",
+    image: "/projects/ai-peer-detector.png",
+    video: "#",
+    tags: ["Python", "Scikit-learn", "NetworkX", "Pandas", "Streamlit"],
+    demoUrl: "https://ai-collusion-detector.onrender.com/",
+    githubUrl: "https://github.com/ayush-244/AI-collusion-detector",
+    featured: true,
     accentColor: "from-amber-500 to-orange-600",
     status: "Live",
-    highlights: ["AI content generation", "Multi-language", "User accounts"]
+    highlights: ["Composite Suspicion Scores", "Graph-based Analysis", "Anomaly Detection"]
   },
   {
     id: 4,
-    title: "Spendlix",
+    title: "Credit Score Prediction",
     category: "FinTech",
-    description: "Financial tracking platform with expense management and budgeting features.",
+    description: "End-to-end ML system using Gradient Boosting to predict credit scores from 50,000+ financial records with an interactive dashboard.",
     image: "/projects/project4.png",
-    video: "/projects/videos/spendlix-demo.mp4",
-    tags: ["React", "Chart.js", "Node.js", "Firebase"],
-    demoUrl: "https://spendlix.vercel.app/login",
-    githubUrl: "https://github.com/Sahilmd01/Spendlix",
+    video: "#",
+    tags: ["Python", "Gradient Boosting", "Streamlit", "Pandas"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/ayush-244/Prediction-of-CIBIL-Score-Using-Alternative-Data-Sources",
+    featured: false,
     accentColor: "from-rose-500 to-pink-600",
     status: "Live",
-    highlights: ["Expense tracking", "Data visualization", "Budget planning"]
+    highlights: ["Gradient Boosting Model", "100ms Inference Time", "Data Pipeline"]
   },
   {
     id: 5,
-    title: "Eattoo",
-    category: "Food Tech",
-    description: "Food delivery platform with restaurant listings and order management.",
-    image: "/projects/project5.png",
-    video: "/projects/videos/eattoo-demo.mp4",
-    tags: ["React", "Redux", "Mapbox", "Stripe"],
-    demoUrl: "https://eattoo-food-delivery-website-frontend.onrender.com/",
-    githubUrl: "https://github.com/Sahilmd01/Eattoo-food-delivery-website",
+    title: "Crop Disease Classification",
+    category: "Computer Vision",
+    description: "Production-ready CNN (MobileNetV2) achieving 96.5% accuracy across 38 disease classes with a Flask API.",
+    image: "/projects/crop-disease.png",
+    video: "#",
+    tags: ["Python", "TensorFlow", "Flask", "Computer Vision"],
+    demoUrl: "https://crop-disease-classification-1-t5nk.onrender.com/",
+    githubUrl: "https://github.com/ayush-244/Crop-Disease-Classification",
+    featured: false,
     accentColor: "from-violet-500 to-purple-600",
     status: "Live",
-    highlights: ["Restaurant listings", "Order system", "Location services"]
+    highlights: ["96.5% Accuracy", "MobileNetV2 CNN", "1.2s Inference Time"]
   },
   {
     id: 6,
-    title: "JobQue",
-    category: "HR Tech",
-    description: "Job matching platform with candidate tracking and application management.",
-    image: "/projects/project6.png",
-    video: "/projects/videos/jobque-demo.mp4",
-    tags: ["Next.js", "PostgreSQL", "Redis", "AI Integration"],
+    title: "HearMe AI",
+    category: "Artificial Intelligence",
+    description: "A production-ready AI platform featuring multilingual sentiment-aware chatbot, RAG-based knowledge reasoning, document intelligence, and long-term personal memory.",
+    image: "/projects/hearme-ai.png",
+    video: "#",
+    tags: ["Next.js", "Python", "Qdrant", "RAG", "LLMs"],
     demoUrl: "#",
-    githubUrl: "#",
-    accentColor: "from-orange-500 to-red-600",
-    status: "Development",
-    highlights: ["Job matching", "Candidate tracking", "Application system"]
+    githubUrl: "https://github.com/ayush-244/HearMe-AI",
+    featured: true,
+    accentColor: "from-blue-500 to-cyan-600",
+    status: "Live",
+    highlights: ["Multilingual Chatbot", "RAG Knowledge Engine", "Personal Memory System"]
   }
 ];
 
 const categoryColors = {
   "Healthcare SaaS": "from-emerald-500/20 to-teal-600/20 text-emerald-600 border-emerald-500/30",
-  "E-commerce": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
-  "Real-time Communication": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30",
+  "EdTech": "from-purple-500/20 to-indigo-600/20 text-purple-600 border-purple-500/30",
   "Artificial Intelligence": "from-amber-500/20 to-orange-600/20 text-amber-600 border-amber-500/30",
   "FinTech": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
-  "Food Tech": "from-violet-500/20 to-purple-600/20 text-violet-600 border-violet-500/30",
-  "HR Tech": "from-orange-500/20 to-red-600/20 text-orange-600 border-orange-500/30"
+  "Computer Vision": "from-violet-500/20 to-purple-600/20 text-violet-600 border-violet-500/30",
+  "Healthcare": "from-blue-500/20 to-cyan-600/20 text-blue-600 border-blue-500/30"
 };
 
 export const ProjectsSection = () => {
@@ -508,7 +481,7 @@ export const ProjectsSection = () => {
               </motion.a>
               
               <motion.a
-                href="https://github.com/sahilmd01"
+                href="https://github.com/ayush-244"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -622,3 +595,4 @@ export const ProjectsSection = () => {
     </section>
   );
 };
+
