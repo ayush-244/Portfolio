@@ -6,7 +6,6 @@ import {
   Briefcase,
   Award,
   Mail,
-  BookOpen,
   Sun,
   Moon,
   Youtube,
@@ -26,7 +25,6 @@ const navItems = [
   { name: "Projects", href: "#projects", icon: Briefcase },
   { name: "Experience", href: "#experience", icon: Award },
   { name: "Contact", href: "#contact", icon: Mail },
-  { name: "Blog", href: "https://blogni.vercel.app", icon: BookOpen },
 ];
 
 const ThemeToggle = () => {
