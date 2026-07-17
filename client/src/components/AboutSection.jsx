@@ -52,8 +52,8 @@ export const AboutSection = () => {
   // Programmatic download function
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `${import.meta.env.BASE_URL}Ayush_current.pdf`; // Must be in public folder
-    link.download = 'Ayush_current.pdf';
+    link.href = `${import.meta.env.BASE_URL}Ayush_AIML.pdf`; // Must be in public folder
+    link.download = 'Ayush_AIML.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
