@@ -13,6 +13,14 @@ export const ExperienceSection = () => {
     },
     {
       id: 2,
+      role: "Backend Developer Intern",
+      company: "Seqqto Software Pvt. Ltd.",
+      duration: "Nov 2025 - Feb 2026",
+      description: "Completed an internship as a Backend Developer at Seqqto Software Pvt. Ltd., contributing to backend systems and server-side development. Evaluated for the Backend Developer role and successfully completed the program with a formal certification.",
+      skills: ["Backend Development", "Server-side Programming", "Software Engineering"]
+    },
+    {
+      id: 3,
       role: "Full Stack Web Development Intern",
       company: "Edunet Foundation & IBM SkillsBuild",
       duration: "Jun 2025 - Aug 2025",
@@ -20,7 +28,7 @@ export const ExperienceSection = () => {
       skills: ["Full Stack Development", "Web Technologies", "Frontend", "Backend"]
     },
     {
-      id: 3,
+      id: 4,
       role: "Summer Research Intern",
       company: "SRM University-AP",
       duration: "Jun 2025 - Jul 2025",
